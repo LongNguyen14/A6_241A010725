@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 mssv,
                 spMonHoc.getSelectedItem().toString(),
                 he,
+                spKhoa.getSelectedItem().toString(),
                 TextUtils.join(", ", buoiHoc),  // String.join() cần API 26 nên dùng TextUtils
                 swThongBao.isChecked() ? getString(R.string.co) : getString(R.string.khong),
                 tgUuTien.isChecked() ? getString(R.string.bat) : getString(R.string.tat));
@@ -170,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
         edtHoTen.setError(null);
         edtMssv.setError(null);
         spMonHoc.setSelection(0);
+        spKhoa.setSelection(1);
         rgHeDaoTao.clearCheck();
         cbSang.setChecked(false);
         cbChieu.setChecked(false);
